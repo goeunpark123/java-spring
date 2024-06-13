@@ -1,0 +1,34 @@
+#### GET request users
+GET localhost:8080/entity/users
+
+#### GET request users
+GET localhost:8080/entity/users/3
+
+### POST request
+POST localhost:8080/entity/users
+Content-Type: application/json
+
+{
+  "id": "user04",
+  "pwd": "pass04",
+  "name": "신사임당",
+  "enrollAt": "2024-02-29T03:16:17.140+00:00"
+}
+
+#### GET request users
+GET localhost:8080/entity/users/4
+
+### PUT modify user
+PUT localhost:8080/entity/users/1
+
+{
+  "id": "user05",
+  "pwd": "pass05",
+  "name": "임꺽정"
+}
+
+### GET modified user
+GET localhost:8080/entity/users/1
+
+### DELETE delete user
+DELETE localhost:8080/entity/users/1
